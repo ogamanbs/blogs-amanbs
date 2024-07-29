@@ -15,7 +15,7 @@ const BlogRPHSCard = () => {
                 </div>
             </Link>
             <div className="w-full md:w-auto mt-3">
-                <h1 className="text-center mb-2 text-xl text-zinc-300 md:text-sm font-medium">React Password Hide and Show</h1>
+                <h1 className="text-center mb-2 text-md text-zinc-300 md:text-sm font-medium">React Password Hide and Show</h1>
             </div>
         </div>
     )
