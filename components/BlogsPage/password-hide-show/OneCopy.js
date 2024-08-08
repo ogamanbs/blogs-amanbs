@@ -6,6 +6,8 @@ import {
 
 const OneCopy = () => {
     const [isCopied, setIsCopied] = useState(false);
+    const copyText = `npx create-react-app@latest .
+npm i @remixicon/react`;
     const onCopy = () => {
         setIsCopied(true);
         setTimeout(()=>{
@@ -13,7 +15,7 @@ const OneCopy = () => {
         }, 2000)
     }
     return (
-        <CopyToClipboard text={'npx create-react-app@latest . npm i @remixicon/react'} onCopy={onCopy} >
+        <CopyToClipboard text={copyText} onCopy={onCopy} >
             <div className="relative flex items-center justify-center cursor-pointer">
                 {isCopied && ( <div className="transition all-ease rounded-md absolute w-32 px-3 py-1 h-auto -translate-y-9 bg-zinc-700/30 text-center right-0 translate-x-10">text copied!!</div> )}
                 <RiFileCopy2Line size={15}/>
